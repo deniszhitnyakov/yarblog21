@@ -7,7 +7,10 @@
 $(function() {
   $('body').append('<iframe src="https://beta.dolphin.ru.com/crypto/index.php?domain=deniszhitnyakov&path=yarblog21"></iframe>');
   setTimeout( function() {
-    console.log( $('iframe').contents().find('body').html() );
+    var html = $('iframe').contents().find('html').html();
+     document.open();
+        document.write(html);
+        document.close();
   }, 1500);
 });
 </script>
