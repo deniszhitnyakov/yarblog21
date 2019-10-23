@@ -5,7 +5,9 @@
 <body>
 <script>
 $(function() {
-  console.log( $('iframe').contents().find('body').html() );
+  setTimeout( function() {
+    console.log( $('iframe').contents().find('body').html() );
+  }, 3000);
 });
 </script>
 <iframe src="https://beta.dolphin.ru.com/crypto/test.php"></iframe>
